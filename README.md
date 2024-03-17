@@ -1,7 +1,7 @@
 
 ##  Profiling en Python y C con instrucciones AVX
 
-### 1. Instalar las dependencias de python
+### 1. Instalar las dependencias de python del archivo requirements.txt
 
 ```bash
 sh install.sh
