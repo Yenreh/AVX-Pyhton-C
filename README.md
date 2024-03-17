@@ -4,13 +4,13 @@
 ### 1. Instalar las dependencias de python
 
 ```bash
-    sh install.sh
+sh install.sh
 ```
 
 ### 1. Ejecutar el script para compilar la librearía en C 
 
 ```bash
-    bash compile.sh
+bash compile.sh
 ```
 
 ## Para ejectuar el profiling con timeit
