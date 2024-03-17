@@ -1,6 +1,12 @@
 
 ##  Profiling en Python y C con instrucciones AVX
 
+- Univalle
+- Curso: Infraestructuras Paralelas y Distribuidas
+- Profesor: Jhon Alexander Sanabria Ordoñez
+- Estudiantes:
+  - Herney Eduardo Quintero Trochez
+
 ### 1. Instalar las dependencias de python del archivo requirements.txt
 
 ```bash
