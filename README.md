@@ -17,7 +17,6 @@ bash compile.sh
 ```bash
 cd src
 bash timeit.sh
-
 ```
 
 ## Para ejectuar el profiling con cProfile
