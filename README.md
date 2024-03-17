@@ -19,13 +19,13 @@ bash install.sh
 bash compile.sh
 ```
 
-## Para ejectuar el profiling con timeit
+### Para ejectuar el profiling con timeit
 ```bash
 cd src
 bash timeit.sh
 ```
 
-## Para ejectuar el profiling con cProfile
+### Para ejectuar el profiling con cProfile
 ```bash
 cd src
 bash cprofile.sh
