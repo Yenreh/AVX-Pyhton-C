@@ -1,8 +1,5 @@
 import ctypes
-import cProfile as profile
-import pstats
-
-prof = profile.Profile()
+import timeit
 
 # Load the shared library into ctypes
 lib_avx = ctypes.CDLL('./lib_AVX.so')
@@ -28,14 +25,12 @@ def scalar_multiply():
     vectorScalarMultiply(vector, scalar, result, ctypes.c_int(n))
 
 
-# Start profiling
-prof.enable()
+# Start measuring time
+starting_time = timeit.default_timer()
 
-# Call the function
 scalar_multiply()
 
-# End profiling
-prof.disable()
+# End measuring time
+ending_time = timeit.default_timer()
 
-stats = pstats.Stats(prof).strip_dirs().sort_stats("cumtime")
-stats.print_stats(10)
+print(f"Tiempo transcurrido: {ending_time - starting_time}")

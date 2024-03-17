@@ -6,7 +6,7 @@ import pstats
 prof = profile.Profile()
 
 
-def scalar_multiplication():
+def scalar_multiply():
     # Definition of constants
     n = 10000000
     lst = range(0, n)
@@ -23,7 +23,7 @@ def scalar_multiplication():
 prof.enable()
 
 # Function call
-scalar_multiplication()
+scalar_multiply()
 
 # End profiling
 prof.disable()

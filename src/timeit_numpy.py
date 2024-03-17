@@ -2,7 +2,7 @@ import numpy as np
 import timeit
 
 
-def scalar_multiplication():
+def scalar_multiply():
     # Definition of constants
     n = 10000000
     lst = range(0, n)
@@ -20,7 +20,7 @@ def scalar_multiplication():
 starting_time = timeit.default_timer()
 
 # Function call
-scalar_multiplication()
+scalar_multiply()
 
 # End measuring time
 ending_time = timeit.default_timer()
