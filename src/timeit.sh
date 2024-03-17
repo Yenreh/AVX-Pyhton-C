@@ -33,12 +33,16 @@ case $option in
     exit 1
     ;;
 esac
+
+read -p "Cuantas veces se quiere ejecutar? " times
 echo "Ejecucion con Numpy"
-for (( i = 0; i < 5; i++ )); do
-python$version timeit_numpy.py
+for (( i = 0; i < times; i++ )); do
+   echo "Ejecución $((i+1)) de $times"
+  python$version timeit_numpy.py
 done
 
 echo "Ejecucion con la libreria de C"
-for (( i = 0; i < 5; i++ )); do
-python$version timeit_avx.py
+for (( i = 0; i < times; i++ )); do
+  echo "Ejecución $((i+1)) de $times"
+  python$version timeit_avx.py
 done
