@@ -10,7 +10,7 @@
 ### 1. Instalar las dependencias de python del archivo requirements.txt
 
 ```bash
-sh install.sh
+bash install.sh
 ```
 
 ### 1. Ejecutar el script para compilar la librearía en C 
