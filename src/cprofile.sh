@@ -34,12 +34,13 @@ case $option in
     ;;
 esac
 read -p "Cuantas veces se quiere ejecutar? " times
+echo ""
 echo "Ejecucion con Numpy"
 for (( i = 0; i < times; i++ )); do
   echo "Ejecución $((i+1)) de $times"
   python$version cprofile_numpy.py
 done
-
+echo ""
 echo "Ejecucion con la libreria de C"
 for (( i = 0; i < times; i++ )); do
   echo "Ejecución $((i+1)) de $times"
