@@ -1,0 +1,2 @@
+./multescalar.sh && python3 -m cProfile onemultescalar.py
+
