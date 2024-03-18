@@ -19,17 +19,5 @@ done
 IFS=$'\n' sorted_resultados_primera_porcion=($(sort -n <<<"${resultados_primera_porcion[*]}"))
 IFS=$'\n' sorted_resultados_segunda_porcion=($(sort -n <<<"${resultados_segunda_porcion[*]}"))
 
-# Imprimir solo los tres resultados más pequeños de la primera porción (excluyendo el primero y el último)
-echo "Tres resultados más pequeños de la primera porción (excluyendo el primero y el último):"
-for ((i=1; i<num_iteraciones-1 && i<=3; i++)); do
-    echo "${sorted_resultados_primera_porcion[i]}"
-done
-
-# Imprimir solo los tres resultados más pequeños de la segunda porción (excluyendo el primero y el último)
-echo "Tres resultados más pequeños de la segunda porción (excluyendo el primero y el último):"
-for ((i=1; i<num_iteraciones-1 && i<=3; i++)); do
-    echo "${sorted_resultados_segunda_porcion[i]}"
-done
-
 
 

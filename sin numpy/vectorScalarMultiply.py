@@ -1,7 +1,7 @@
 import timeit
 #PRIMERA PORCION DEL CODIGO
 starting_time = timeit.default_timer()
-n = 50000000
+n = 10000000
 lst = list(range(n))
 x = 2
 v1 = lst

@@ -1,6 +1,6 @@
 import numpy as np
 
-n = 50000000
+n = 10000000
 lst = range(n)
 x = 2
 v1 = np.array(lst)

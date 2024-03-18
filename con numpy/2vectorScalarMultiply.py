@@ -2,7 +2,7 @@ import numpy as np
 import timeit
 
 starting_time1 = timeit.default_timer()
-n = 50000000
+n = 10000000
 lst = range(n)
 x = 2
 v1 = np.array(lst)
