@@ -35,6 +35,12 @@ case $option in
 esac
 read -p "Cuantas veces se quiere ejecutar? " times
 echo ""
+echo "Ejecucion con python base"
+for (( i = 0; i < times; i++ )); do
+  echo "Ejecución $((i+1)) de $times"
+  python$version cprofile_base.py
+done
+echo ""
 echo "Ejecucion con Numpy"
 for (( i = 0; i < times; i++ )); do
   echo "Ejecución $((i+1)) de $times"

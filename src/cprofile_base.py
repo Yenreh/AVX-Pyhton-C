@@ -1,4 +1,4 @@
-import numpy as np
+
 import cProfile as profile
 import pstats
 
@@ -7,16 +7,21 @@ prof = profile.Profile()
 
 
 def scalar_multiply():
-    # Definition of constants
     n = 10000000
-    lst = range(0, n)
+    lst = list(range(n))
     x = 2
+    v1 = lst[:]
+    v2 = lst[:]
 
-    # Vector creation using numpy
-    v = np.array(lst)
-    # Scalar multiplication
-    for i in lst:
-        v[i] = v[i] * x
+    for i in range(n):
+       v2[i] = 1
+
+       total_sum = 0
+    for i in range(n):
+       total_sum += (v1[i] + 1) * v2[i]
+
+    print("Total sum:", total_sum)
+
 
 
 # Start profiling
