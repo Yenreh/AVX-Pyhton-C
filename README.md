@@ -3,10 +3,10 @@
 
 - Univalle
 - Curso: Infraestructuras Paralelas y Distribuidas
-- Profesor: Jhon Alexander Sanabria Ordoñez
+- Profesor: Jhon Alexander Sanabria Ordoñez 
 - Estudiantes:
-  - Herney Eduardo Quintero Trochez
-
+  - Herney Eduardo Quintero Trochez (1528556)
+  - Ervin Caravali Ibarra(1925648)
 ### 1. Instalar las dependencias de python del archivo requirements.txt
 
 ```bash
